@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Set Content and Attributes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #div1{
+            height:100px;
+            width: 100px;
+            color: black;
+            background-color:red; 
+            position:absolute;
+
+        }
+    </style>
+</head>
+<body>
+ 
+    <h3> This is an example of using the eq() method. </h3>
+    <h4> Index always starts with 0, so the position of first value is 0 instead of 1. </h4>
+    <p class = "para"> First Paragraph </p>
+    <p class = "para"> Second Paragraph </p>
+    <p class = "para"> Third Paragraph </p>
+    <p class = "para"> Fourth Paragraph </p>
+    <p class = "para"> Fifth Paragraph </p>
+    <script>
+        $(document).ready(function() {
+        $(".para").eq(0).css({ "color": "red", "fontSize": "20px", "fontWeight": "bold" });
+        $(".para").eq(3).css({ "color": "blue", "fontSize": "20px", "fontWeight": "bold" });
+        });
+        </script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
